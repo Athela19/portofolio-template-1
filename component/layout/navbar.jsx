@@ -8,32 +8,41 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex justify-between items-center py-4 px-[40px] bg-[var(--background)] border-b border-solid border-[var(--primarry)] fixed top-0 left-0 right-0 z-10">
+      <div className="flex justify-between items-center py-4 px-[40px] bg-[var(--background)] border-b border-solid border-[var(--primarry)] fixed top-0 left-0 right-0 z-100">
         <h1 className="text-[var(--teks)] text-2xl font-bold">Kali<span className="text-[var(--primarry)]">Buntu</span>.</h1>
 
         {/* Desktop menu */}
-        <ul className="hidden md:flex gap-6">
-          <li className="relative group">
-            <a href="#home" className="text-[var(--teks)] text-lg">Home</a>
-            <span className="absolute bottom-0 left-0 w-0 h-1 bg-[var(--primarry)] group-hover:w-full transition-all duration-300"></span>
-          </li>
-          <li className="relative group">
-            <a href="#about" className="text-[var(--teks)] text-lg">About</a>
-            <span className="absolute bottom-0 left-0 w-0 h-1 bg-[var(--primarry)] group-hover:w-full transition-all duration-300"></span>
-          </li>
-          <li className="relative group">
-            <a href="#skills" className="text-[var(--teks)] text-lg">Skills</a>
-            <span className="absolute bottom-0 left-0 w-0 h-1 bg-[var(--primarry)] group-hover:w-full transition-all duration-300"></span>
-          </li>
-          <li className="relative group">
-            <a href="#projects" className="text-[var(--teks)] text-lg">Projects</a>
-            <span className="absolute bottom-0 left-0 w-0 h-1 bg-[var(--primarry)] group-hover:w-full transition-all duration-300"></span>
-          </li>
-          <li className="relative group">
-            <a href="#contact" className="text-[var(--teks)] text-lg">Contact</a>
-            <span className="absolute bottom-0 left-0 w-0 h-1 bg-[var(--primarry)] group-hover:w-full transition-all duration-300"></span>
-          </li>
-        </ul>
+       <ul className="hidden md:flex gap-6">
+  <li className="relative group flex items-center">
+    <a href="#home" className="text-[var(--teks)] text-lg">Home</a>
+    <span className="absolute bottom-0 left-0 w-0 h-1 bg-[var(--primarry)] group-hover:w-full transition-all duration-300"></span>
+  </li>
+  <li className="relative group flex items-center">
+    <a href="#about" className="text-[var(--teks)] text-lg">About</a>
+    <span className="absolute bottom-0 left-0 w-0 h-1 bg-[var(--primarry)] group-hover:w-full transition-all duration-300"></span>
+  </li>
+  <li className="relative group flex items-center">
+    <a href="#skills" className="text-[var(--teks)] text-lg">Skills</a>
+    <span className="absolute bottom-0 left-0 w-0 h-1 bg-[var(--primarry)] group-hover:w-full transition-all duration-300"></span>
+  </li>
+  <li className="relative group flex items-center">
+    <a href="#projects" className="text-[var(--teks)] text-lg">Projects</a>
+    <span className="absolute bottom-0 left-0 w-0 h-1 bg-[var(--primarry)] group-hover:w-full transition-all duration-300"></span>
+  </li>
+  <li className="relative group flex items-center">
+    <a href="#certificate" className="text-[var(--teks)] text-lg">Certificate</a>
+    <span className="absolute bottom-0 left-0 w-0 h-1 bg-[var(--primarry)] group-hover:w-full transition-all duration-300"></span>
+  </li>
+  <li className="relative group flex items-center">
+    <a href="#">
+      <button className="px-6 py-3 bg-[var(--primarry)] text-[var(--teks)] hover:bg-[var(--primarry)]/20 rounded-lg font-medium transition-all w-full sm:w-auto">
+        Contact Me
+      </button>
+    </a>
+    {/*disini masukin link linkedin  */}
+  </li>
+</ul>
+
 
         {/* Hamburger Icon for mobile */}
         <div className="md:hidden flex items-center" onClick={toggleSidebar}>
@@ -49,7 +58,7 @@ export default function Navbar() {
 
       {/* Sidebar for Mobile */}
       <div 
-        className={`fixed inset-0 bg-black bg-opacity-50 z-20 transition-opacity duration-500 ${
+        className={`fixed inset-0 bg-[var(--background)] bg-opacity-50 z-120 transition-opacity duration-500 ${
           sidebarOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
         }`}
         onClick={toggleSidebar}
@@ -87,8 +96,11 @@ export default function Navbar() {
               <a href="#projects" className="text-[var(--teks)] text-lg" onClick={toggleSidebar}>Projects</a>
             </li>
             <li className="relative pb-2 border-b border-[var(--primarry)] text-center">
-              <a href="#contact" className="text-[var(--teks)] text-lg" onClick={toggleSidebar}>Contact</a>
+              <a href="#certificate" className="text-[var(--teks)] text-lg" onClick={toggleSidebar}>Certificate</a>
             </li>
+            <li className="relative pb-2 border-b border-[var(--primarry)] text-center">
+              <a href="#" className="text-[var(--teks)] text-lg" onClick={toggleSidebar}>Contact</a>
+            </li>    {/*disini masukin link linkedin  */}
           </ul>
         </div>
       </div>

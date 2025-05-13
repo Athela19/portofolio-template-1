@@ -1,0 +1,16 @@
+di app, masuk ke css, ada root di situ buat ganti warna yang di pakai di web ini
+buat atur atur link atau teks itu ada di component, masuk ke layout buat atur atur navbar sama footer
+di navbar ubah bagian href di contact jadi link linkedin
+di bagian footer ada sosmed, bisa masukin juga di bagian href nya atau hapus aja
+
+di home ganti contact me jadi link linkedin, nama, sama keahlian
+masukin file cv di folder public terus ntar ganti namanya jadi CV.PDF (kalau gagal ganti aja di kodingannya)
+masukin file foto di public terus ntar ganti namanya di bagian kiri
+
+lakuin hal yang sama di file home ke file about me
+
+di skill bisa di ganti ganti skilnya, dihapus atau ditambahin juga gapapa, nanti otomatis nambah kok
+
+di projek juga sama, kayak yang di skill
+
+di certificate juga sama

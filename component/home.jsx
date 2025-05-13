@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <main className="min-h-screen bg-[var(--background)] text-[var(--teks)] pt-[70px] sm:pt-[90px]" id="home">
-      {/* Hero Section */}
       <section className="container mx-auto px-4 py-16 sm:py-24 md:py-32">
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-12">
           {/* Bagian Kiri - Foto Profil */}
@@ -19,7 +18,7 @@ export default function Home() {
           >
             <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-[var(--primarry)]">
               <Image
-                src="/vercel.svg"
+                src="/vercel.svg"  /*disini masukin foto  */
                 alt="Cybersecurity Expert"
                 fill
                 className="object-cover"
@@ -37,7 +36,7 @@ export default function Home() {
               transition={{ delay: 0.2, duration: 0.8 }}
               className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold"
             >
-              Hi, I'm <span className="text-[var(--primarry)]">Hanif</span>
+              Hi, I'm <span className="text-[var(--primarry)]">Anonim</span>    {/*disini masukin link Nama  */}
             </motion.h1>
 
             <motion.div
@@ -56,7 +55,7 @@ export default function Home() {
                   1500,
                   "Security Researcher",
                   1500,
-                ]}
+                ]}  /*disini masukin pekerjaan atau keahlian, bisa ditambah juga  */
                 wrapper="span"
                 speed={40}
                 deletionSpeed={60}
@@ -70,10 +69,11 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.8 }}
-              className="text-gray-300 text-base sm:text-lg md:text-xl"
+              className="text-[var(--teks)]text-base sm:text-lg md:text-xl"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
               quae neque voluptatum cumque fugiat quo voluptates eius magni.
+                 {/*disini masukin deskripsi singkat  */}
             </motion.p>
 
             <motion.div
@@ -82,12 +82,12 @@ export default function Home() {
               transition={{ delay: 0.8, duration: 0.8 }}
               className="flex flex-col sm:flex-row sm:justify-center md:justify-start gap-4 pt-4"
             >
-              <a href="#contact">
+              <a href="#">   {/*disini masukin link linkedin  */}
                 <button className="px-6 py-3 bg-[var(--primarry)] text-[var(--teks)] hover:bg-[var(--primarry)]/20 rounded-lg font-medium transition-all w-full sm:w-auto">
                   Contact Me
                 </button>
               </a>
-              <a href="/CV.HANIF.PDF" download>
+              <a href="/CV.PDF" download>   {/*disini ganti sama nama file cv  */}
                 <button className="px-6 py-3 bg-transparent border-2 border-[var(--primarry)] text-[var(--primarry)] hover:bg-[var(--primarry)]/10 rounded-lg font-medium transition-all w-full sm:w-auto">
                   Download CV
                 </button>

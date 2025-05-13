@@ -44,7 +44,7 @@ export default function Footer() {
           <div className="md:justify-self-center">
             <h3 className="text-[var(--teks)] font-semibold mb-4 text-center">Quick Links</h3>
             <ul className="space-y-2 text-center">
-              {['Home', 'About', 'Skills', 'Projects', 'Contact'].map((item) => (
+              {['Home', 'About', 'Skills', 'Projects', 'Certificate'].map((item) => (
                 <li key={item}>
                   <Link 
                     href={`#${item.toLowerCase()}`} 

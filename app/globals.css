@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
+/* disini buat ngerubah warna yang dipake di website */
 :root {
   --background: #171717;
-  --foreground: #ffffff;
   --teks: #ffffff;
   --primarry: #16A94B;
 

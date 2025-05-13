@@ -6,10 +6,25 @@ export default function Skill() {
   return (
     <div id="skills">
       {/* Skills Section */}
-      <section className="bg-[var(--background)] py-16 border-t border-b border-solid border-[var(--primarry)]" >
+      <section className="bg-[var(--background)] py-16 border-t border-b border-solid border-[var(--primarry)] md:py-24" >
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-[var(--teks)]">Specialized In</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center mb-16">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-4xl sm:text-5xl md:text-6xl font-bold bg-clip-text text-transparent bg-[var(--primarry)] mb-4 text-center"
+          >
+            My Skills
+          </motion.h2>
+          <motion.div
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="h-1 bg-gradient-to-r from-[var(--primarry)] to-[var(--background)] w-32 mx-auto mb-8 origin-left"
+          />
+        </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">    {/*disini ganti skill atau tambahin  */}
             {[
               'Penetration Testing',
               'Vulnerability Assessment',
@@ -44,7 +59,7 @@ export default function Skill() {
                     />
                   </svg>
                 </div>
-                <h3 className="font-medium text-white">{skill}</h3>
+                <h3 className="font-medium text-[var(--teks)]">{skill}</h3>
               </motion.div>
             ))}
           </div>
