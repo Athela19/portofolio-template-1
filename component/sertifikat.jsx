@@ -12,7 +12,7 @@ const images = [
 
 const Certifications = () => {
   return (
-    <section className="w-full py-16 bg-[var(--background)]" id="certificate">
+    <section className="w-full py-16 bg-[var(--background)] md:py-24" id="certificate">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2
